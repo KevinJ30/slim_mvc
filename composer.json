@@ -1,0 +1,14 @@
+{
+    "name": "kevinj30/slim_mvc",
+    "description": "Amlioration de slim pour une utilisation mvc",
+    "authors": [
+        {
+            "name": "KevinJ30",
+            "email": "kev.joudrier@gmail.com"
+        }
+    ],
+    "require": {
+        "slim/slim": "^3.1",
+        "simple-validator/simple-validator": "dev-master"
+    }
+}
