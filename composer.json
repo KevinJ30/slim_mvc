@@ -7,6 +7,12 @@
             "email": "kev.joudrier@gmail.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "App/",
+            "Core\\": "Core/"
+        }
+    },
     "require": {
         "slim/slim": "^3.1",
         "simple-validator/simple-validator": "dev-master"
