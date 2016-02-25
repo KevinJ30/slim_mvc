@@ -2,10 +2,12 @@
 
 namespace App\Controller;
 
-class ArticlesController{
+use Core\Controller\Controller;
+
+class ArticlesController extends Controller{
 
     public function index(){
-        var_dump('Article');
+
     }
 
 }

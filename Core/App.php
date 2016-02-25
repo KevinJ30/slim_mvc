@@ -14,7 +14,11 @@ class App{
 
     // Constructeur de la class
     private function __construct(){
-       $this->slim = new \Slim\App();
+        // Récupération de la configuration
+        $settings = require 'config/app.php';
+
+
+        $this->slim = new \Slim\App($settings);
     }
 
     public static function getInstance(){
