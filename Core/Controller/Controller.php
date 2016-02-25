@@ -14,6 +14,8 @@ class Controller{
 
     public $router;
 
+    private $container;
+
     /**
      * Initialisation du controller
      *
@@ -22,10 +24,8 @@ class Controller{
     public function __construct($container){
         $this->request = $container->request;
         $this->router = $container->router;
+        $this->container = $container;
 
-        var_dump($container->get('settings'));
+        var_dump($this->container->database->getDatabase());
     }
-
-
-
 }

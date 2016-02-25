@@ -9,7 +9,7 @@ use Core\Routing\Router;
 require 'vendor/autoload.php';
 
 Router::get('/login', function(){
-    var_dump('login');
+    var_dump($this->database);
 });
 
 Router::get('/posts', 'ArticlesController@index');

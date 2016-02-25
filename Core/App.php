@@ -1,6 +1,7 @@
 <?php
 
 namespace Core;
+use Core\Database\Database;
 
 /**
  * Class Singleton App
@@ -19,6 +20,11 @@ class App{
 
 
         $this->slim = new \Slim\App($settings);
+        $database = Database::getInstance($this->slim->getContainer()->get('settings'));
+
+
+        // DI
+        $this->slim->getContainer()->database = $database;
     }
 
     public static function getInstance(){
