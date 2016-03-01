@@ -2,6 +2,7 @@
 
 namespace Core;
 use Core\Database\Database;
+use Core\Database\Table;
 
 /**
  * Class Singleton App

@@ -1,6 +1,7 @@
 <?php
 
 namespace Core\Controller;
+use Core\Database\Table;
 
 /**
  * Class Controller
@@ -25,7 +26,9 @@ class Controller{
         $this->request = $container->request;
         $this->router = $container->router;
         $this->container = $container;
+    }
 
-        var_dump($this->container->database->getDatabase());
+    public function table($table){
+        return new Table($this->container->database, $table);
     }
 }
